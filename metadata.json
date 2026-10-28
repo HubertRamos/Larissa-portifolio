@@ -1,0 +1,6 @@
+{
+  "name": "Fashion Portfolio — Editorial Showcase",
+  "description": "Portfólio editorial de design de moda com direção de arte contemporânea, estudos de alfaiataria, draping e pesquisa têxtil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
