@@ -7,7 +7,7 @@ import { SiteConfig } from '../types/portfolio';
  * personalizados neste único arquivo pelo desenvolvedor.
  */
 export const defaultSiteConfig: SiteConfig = {
-  atelierName: "FASHION PORTFOLIO",
+  atelierName: "LARISSA PORTFOLIO",
   tagline: "Estudos de Silhueta, Draping & Construção Vestimentar",
   subtitle: "Portfólio Editorial de Design de Moda",
   designerRole: "Design de Moda & Pesquisa Têxtil",
@@ -19,8 +19,8 @@ export const defaultSiteConfig: SiteConfig = {
   edition: "EDIÇÃO MONOGRÁFICA 01",
   season: "COLEÇÃO EXPERIMENTAL 2026",
   location: "Brasil",
-  contactEmail: "contato@portfolio.fashion",
-  instagramHandle: "@portfolio.fashion",
+  contactEmail: "contato@nãosei",
+  instagramHandle: "@nãosei",
   linkedinUrl: "https://linkedin.com",
   showDemoNotice: false,
   notesForOwner: "Demonstração visual desenvolvida para apresentação. Os dados de projetos e contatos podem ser substituídos em src/config/site.ts e src/data/projects.ts."

@@ -1,0 +1,31 @@
+{
+  "id": "proj-04",
+  "title": "Croquis IV: Anatomia do Movimento",
+  "slug": "croquis-anatomia-movimento",
+  "category": "conceptual",
+  "categoryLabel": "Estudos de Silhueta",
+  "year": "2026",
+  "issueNumber": "VOL. 01 / PEÇA 04",
+  "description": "Caderno de desenhos gestuais a grafite e lavagem de aquarela investigando o volume em transição corporal. Uma série de croquis de moda que captura a tensão muscular e a inércia da alfaiataria em passo acelerado.",
+  "summary": "Caderno de desenhos gestuais a grafite e lavagem de aquarela investigando o volume em transição corporal.",
+  "cover": "cover.jpg",
+  "images": [
+    "images/01.jpg"
+  ],
+  "materials": [
+    "Papel algodão 300g/m² com fibra aparente e borda rústica",
+    "Grafite macio 6B, carvão vegetal e tinta nanquim japonesa",
+    "Pigmentos de aquarela em tons taupe e terra"
+  ],
+  "credits": [
+    "Ilustração e Pesquisa Visual: Atelier Autoral",
+    "Técnicas de Aguada: Arquivo de Desenho de Moda"
+  ],
+  "references": [
+    "René Gruau — A Síntese do Traço e a Elegância Gráfica",
+    "Yves Saint Laurent — Croquis de Trabalho e Anotações Marginais",
+    "Desenho Anatômico de Egon Schiele"
+  ],
+  "featured": false,
+  "published": true
+}

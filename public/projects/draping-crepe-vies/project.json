@@ -1,0 +1,32 @@
+{
+  "id": "proj-02",
+  "title": "Draping II: Crepe em Viés",
+  "slug": "draping-crepe-vies",
+  "category": "draping",
+  "categoryLabel": "Moulage & Fluidez",
+  "year": "2026",
+  "issueNumber": "VOL. 01 / PEÇA 02",
+  "description": "Vestido assimétrico de seda marfim moldado diretamente no busto com dobras plissadas em leque radial. Uma investigação sobre as leis da gravidade e a elasticidade natural de fios tecidos em corte enviesado a 45 graus.",
+  "summary": "Vestido assimétrico de seda marfim moldado diretamente no busto com dobras plissadas em leque radial.",
+  "cover": "cover.jpg",
+  "images": [
+    "images/01.jpg",
+    "images/02.jpg"
+  ],
+  "materials": [
+    "Crepe georgette de seda pura 100% (Marfim Ivory #F2EEE7)",
+    "Linho rústico cru para estrutura do corselete interno",
+    "Fios de seda pura para acabamentos de bainha de lenço rolottê"
+  ],
+  "credits": [
+    "Moulage & Drapeado: Estudo Experimental de Ateliê",
+    "Fotografia Editorial: Arquivo de Demonstração"
+  ],
+  "references": [
+    "Madeleine Vionnet — A Revolução do Corte em Viés (1920-1930)",
+    "Madame Grès — Os Plissados Esculturais Clássicos",
+    "Gravidade e Tensão Têxtil na Escultura Moderna"
+  ],
+  "featured": true,
+  "published": true
+}

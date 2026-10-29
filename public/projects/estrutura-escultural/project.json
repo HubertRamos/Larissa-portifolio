@@ -1,0 +1,34 @@
+{
+  "id": "proj-01",
+  "title": "Silhueta I: Estrutura Escultural",
+  "slug": "estrutura-escultural",
+  "category": "tailoring",
+  "categoryLabel": "Alfaiataria Arquitetural",
+  "year": "2026",
+  "issueNumber": "VOL. 01 / PEÇA 01",
+  "description": "Estudo formal de casaco estruturado em lã pesada com gola escultural e forro acetinado em bordeaux. O projeto parte da rigidez da alfaiataria masculina tradicional e a descontrói através de curvas hiperbólicas e acolchoamento interno termo-moldado.",
+  "summary": "Estudo formal de casaco estruturado em lã pesada com gola escultural e forro acetinado em bordeaux.",
+  "cover": "cover.jpg",
+  "images": [
+    "images/01.jpg",
+    "images/02.jpg"
+  ],
+  "materials": [
+    "Lã virgem 480g/m² (Preto suave #201E1C)",
+    "Veludo de seda pura (Bordeaux interno #713C42)",
+    "Entretela de crina de cavalo armada à mão",
+    "Cupro acetinado para mangas e forro estrutural"
+  ],
+  "credits": [
+    "Direção de Criação: Atelier de Moda (Demonstração)",
+    "Modelagem e Alfaiataria: Confecção Experimental",
+    "Documentação Fotográfica: Arquivo Editorial de Moda"
+  ],
+  "references": [
+    "Cristóbal Balenciaga — Os Casacos Esculturais dos Anos 50",
+    "Brancusi — A Simplificação das Formas no Espaço",
+    "Tratado de Alfaiataria Masculina Britânica & Desconstrução Japonesa"
+  ],
+  "featured": true,
+  "published": true
+}

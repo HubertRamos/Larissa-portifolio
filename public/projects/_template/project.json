@@ -1,0 +1,25 @@
+{
+  "id": "nome-do-projeto",
+  "title": "Título da Obra ou Coleção",
+  "category": "tailoring",
+  "categoryLabel": "Alfaiataria",
+  "year": "2026",
+  "issueNumber": "VOL. 01 / PEÇA 05",
+  "description": "Descrição e conceito poético da criação desenvolvida no ateliê.",
+  "cover": "cover.jpg",
+  "images": [
+    "images/look-01.jpg"
+  ],
+  "materials": [
+    "Lã fria estruturada",
+    "Seda pura marfim"
+  ],
+  "credits": [
+    "Criação e Modelagem: Larissa"
+  ],
+  "references": [
+    "Pesquisa de proporções e draping"
+  ],
+  "featured": false,
+  "published": false
+}

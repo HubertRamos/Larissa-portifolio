@@ -1,0 +1,18 @@
+{
+  "id": "proj-05-draft",
+  "title": "Estudo Oculto: Arquivo em Desenvolvimento (Rascunho)",
+  "slug": "projeto-oculto-rascunho",
+  "category": "tailoring",
+  "categoryLabel": "Estudos Experimentais",
+  "year": "2026",
+  "issueNumber": "VOL. 01 / RASCUNHO",
+  "description": "Projeto experimental em processo de maturação têxtil no atelier. Permanece oculto até a conclusão dos testes de modelagem.",
+  "summary": "Projeto experimental em processo de maturação têxtil no atelier.",
+  "cover": "cover.jpg",
+  "images": [],
+  "materials": "Linho encerado e sarja pesada",
+  "credits": "Equipe de Modelagem",
+  "references": "Pesquisa interna de atelier",
+  "featured": false,
+  "published": false
+}

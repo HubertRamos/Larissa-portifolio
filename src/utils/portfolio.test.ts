@@ -16,9 +16,12 @@ test('getPublishedProjects filters out projects with published: false', () => {
   assert.ok(published.length > 0);
   assert.ok(published.every((p) => p.published === true));
 
-  // The draft project must not be included
+  // The draft project and the template folder must not be included in published projects
   const hasDraft = published.some((p) => p.id === 'proj-05-draft' || p.slug === 'projeto-oculto-rascunho');
   assert.equal(hasDraft, false);
+
+  const hasTemplate = published.some((p) => p.id === 'nome-do-projeto' || p.slug === '_template');
+  assert.equal(hasTemplate, false);
 });
 
 test('getFeaturedProjects returns only published projects that have featured: true', () => {
@@ -96,3 +99,19 @@ test('getDisciplinesList builds list with count and all option from published it
   assert.equal(list[0].id, 'all');
   assert.equal(list[0].count, published.length);
 });
+
+test('syncProjects dynamically resolves project folders and paths correctly', async () => {
+  const { syncProjects } = await import('../../scripts/build-projects.ts');
+  const allProjects = syncProjects();
+  assert.ok(allProjects.length >= 5);
+
+  const escultural = allProjects.find((p) => p.slug === 'estrutura-escultural');
+  assert.ok(escultural);
+  assert.equal(escultural?.coverImage, '/projects/estrutura-escultural/cover.jpg');
+  assert.ok(escultural?.gallery.includes('/projects/estrutura-escultural/images/01.jpg'));
+
+  // Ensure published is boolean
+  assert.equal(typeof escultural?.published, 'boolean');
+  assert.equal(typeof escultural?.featured, 'boolean');
+});
+

@@ -102,19 +102,6 @@ export const HomePage: React.FC<HomePageProps> = ({
         className="relative min-h-[92vh] flex flex-col justify-between pt-6 sm:pt-10 pb-10 border-b border-[#201E1C]/15 overflow-hidden select-none"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 w-full flex-1 flex flex-col justify-between">
-          {/* Top Monographic Issue Bar */}
-          <div className="flex flex-wrap items-center justify-between gap-4 text-[11px] uppercase tracking-widest text-[#201E1C]/60 pb-5 border-b border-[#201E1C]/10">
-            <div className="flex items-center gap-3">
-              <span className="font-semibold text-[#201E1C]">{siteConfig.edition}</span>
-              <span aria-hidden="true">·</span>
-              <span>{siteConfig.season}</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <span className="text-[#713C42] font-semibold">{siteConfig.designerRole}</span>
-              <span aria-hidden="true">·</span>
-              <span className="font-mono text-[10px]">DOCUMENTAÇÃO AUTORAL</span>
-            </div>
-          </div>
 
           {/* Living Editorial Composition Stage */}
           <div className="py-8 sm:py-12 relative perspective-stage">
@@ -410,21 +397,6 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </p>
               </div>
             ))}
-          </div>
-
-          <div className="pt-8 border-t border-[#F2EEE7]/10 flex flex-wrap items-center justify-between gap-4 text-xs text-[#B7A18B]">
-            <div className="flex items-center gap-3">
-              <span>Paleta: Off-white (#F2EEE7)</span>
-              <span aria-hidden="true">·</span>
-              <span>Preto Suave (#201E1C)</span>
-              <span aria-hidden="true">·</span>
-              <span>Taupe (#B7A18B)</span>
-              <span aria-hidden="true">·</span>
-              <span>Bordô (#713C42)</span>
-            </div>
-            <span className="text-[11px] font-mono uppercase tracking-wider text-[#F2EEE7]/60">
-              Rigor de Ateliê
-            </span>
           </div>
         </div>
       </section>

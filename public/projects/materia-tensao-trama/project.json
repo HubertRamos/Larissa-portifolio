@@ -1,0 +1,31 @@
+{
+  "id": "proj-03",
+  "title": "Matéria III: Tensão & Trama",
+  "slug": "materia-tensao-trama",
+  "category": "textile",
+  "categoryLabel": "Pesquisa Têxtil & Textura",
+  "year": "2026",
+  "issueNumber": "VOL. 01 / PEÇA 03",
+  "description": "Laboratório de contrastes tácteis entre a rusticidade do linho artesanal e o brilho velado do cetim bordeaux. Uma investigação sobre a união física de tecidos com elasticidades opostas sob costura manual.",
+  "summary": "Laboratório de contrastes tácteis entre a rusticidade do linho artesanal e o brilho velado do cetim bordeaux.",
+  "cover": "cover.jpg",
+  "images": [
+    "images/01.jpg"
+  ],
+  "materials": [
+    "Linho rústico desfiado à mão com urdume irregular",
+    "Cetim duchesse bordeaux de alta densidade",
+    "Lã bouclé crua preta com textura tridimensional"
+  ],
+  "credits": [
+    "Pesquisa Têxtil: Laboratório de Superfícies",
+    "Ensaios de Fricção: Oficina de Prototipagem"
+  ],
+  "references": [
+    "Anni Albers — On Weaving e a Tensão Estrutural do Fio",
+    "Arte Povera — A Valorização da Matéria Crua e Textura",
+    "Arquivos Têxteis de Lyon & Amostragem Artesanal"
+  ],
+  "featured": false,
+  "published": true
+}

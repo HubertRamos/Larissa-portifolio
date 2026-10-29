@@ -1,14 +1,33 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import {defineConfig} from 'vite';
+import fs from 'fs';
+import { defineConfig, Plugin } from 'vite';
+import { syncProjects } from './scripts/build-projects.ts';
+
+function projectsAutoDiscoveryPlugin(): Plugin {
+  return {
+    name: 'vite-plugin-projects-auto-discovery',
+    buildStart() {
+      syncProjects();
+    },
+    closeBundle() {
+      const srcDir = path.resolve(import.meta.dirname ?? process.cwd(), 'projects');
+      const distDir = path.resolve(import.meta.dirname ?? process.cwd(), 'dist', 'projects');
+      if (fs.existsSync(srcDir)) {
+        fs.mkdirSync(distDir, { recursive: true });
+        fs.cpSync(srcDir, distDir, { recursive: true });
+      }
+    },
+  };
+}
 
 export default defineConfig(() => {
   return {
-    plugins: [react(), tailwindcss()],
+    plugins: [react(), tailwindcss(), projectsAutoDiscoveryPlugin()],
     resolve: {
       alias: {
-        '@': path.resolve(import.meta.dirname ?? __dirname, '.'),
+        '@': path.resolve(import.meta.dirname ?? process.cwd(), '.'),
       },
     },
     server: {
@@ -20,3 +39,4 @@ export default defineConfig(() => {
     },
   };
 });
+
