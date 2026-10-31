@@ -151,3 +151,74 @@ html {
   perspective-origin: 50% 50%;
 }
 
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* 3D Editorial Depth Presets with subtle tilt & hover elevation */
+.depth-plane-lead {
+  transform: perspective(1200px) rotateY(-1.2deg) rotateX(0.6deg) translateZ(0px);
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.8s ease;
+}
+
+.depth-plane-lead:hover {
+  transform: perspective(1200px) rotateY(0deg) rotateX(0deg) translateZ(16px);
+}
+
+.depth-plane-satellite {
+  transform: perspective(1200px) rotateY(1.8deg) rotateX(-0.8deg) translateZ(0px);
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.8s ease;
+}
+
+.depth-plane-satellite:hover {
+  transform: perspective(1200px) rotateY(0deg) rotateX(0deg) translateZ(18px);
+}
+
+.depth-plane-overlap {
+  transform: perspective(1200px) rotateY(-1.5deg) rotateX(1deg) translateZ(18px);
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.8s ease;
+}
+
+.depth-plane-overlap:hover {
+  transform: perspective(1200px) rotateY(0deg) rotateX(0deg) translateZ(30px);
+}
+
+.depth-plane-horizontal {
+  transform: perspective(1200px) rotateX(1deg) translateZ(0px);
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.8s ease;
+}
+
+.depth-plane-horizontal:hover {
+  transform: perspective(1200px) rotateX(0deg) translateZ(14px);
+}
+
+/* Layer Z-lift for text and badges inside cards */
+.translate-z-plate {
+  transform: translateZ(16px);
+}
+
+.translate-z-badge {
+  transform: translateZ(24px);
+}
+
+.translate-z-shadow {
+  transform: translateZ(-12px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .depth-plane-lead,
+  .depth-plane-satellite,
+  .depth-plane-overlap,
+  .depth-plane-horizontal {
+    transform: none !important;
+  }
+}
+

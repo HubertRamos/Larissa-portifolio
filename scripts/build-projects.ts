@@ -25,8 +25,14 @@ export function syncProjects() {
 
   const loadedProjects: any[] = [];
 
-  // Ensure public/projects exists
+  // Ensure public/projects and public/assets/images exist
   fs.mkdirSync(publicProjectsDir, { recursive: true });
+  const srcAssetsDir = path.join(rootDir, 'src', 'assets', 'images');
+  const publicAssetsDir = path.join(rootDir, 'public', 'assets', 'images');
+  if (fs.existsSync(srcAssetsDir)) {
+    fs.mkdirSync(publicAssetsDir, { recursive: true });
+    fs.cpSync(srcAssetsDir, publicAssetsDir, { recursive: true });
+  }
 
   for (const dir of projectDirs) {
     const dirName = dir.name;
@@ -94,6 +100,12 @@ export function syncProjects() {
         gallery.push(coverImage);
       }
 
+      // Resolve publishedAt if present and valid (YYYY-MM-DD)
+      const publishedAt =
+        typeof data.publishedAt === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(data.publishedAt.trim())
+          ? data.publishedAt.trim()
+          : undefined;
+
       // Build normalized project representation
       const project = {
         ...data,
@@ -106,6 +118,7 @@ export function syncProjects() {
         gallery,
         featured,
         published,
+        ...(publishedAt ? { publishedAt } : {}),
       };
 
       loadedProjects.push(project);

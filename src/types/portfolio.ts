@@ -51,6 +51,7 @@ export interface Project {
   published: boolean;
 
   // Optional editorial fields
+  publishedAt?: string;
   year?: string;
   materials?: string | string[];
   credits?: string | string[];

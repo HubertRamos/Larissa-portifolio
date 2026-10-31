@@ -15,6 +15,29 @@ export function getFeaturedProjects(projects: Project[]): Project[] {
 }
 
 /**
+ * Retorna os projetos mais recentes publicados ordenados por data de publicação (publishedAt YYYY-MM-DD).
+ * Projetos sem data válida são ignorados na seleção de recentes, mas continuam disponíveis na galeria geral.
+ */
+export function getRecentProjects(projects: Project[], limit = 4): Project[] {
+  const published = getPublishedProjects(projects);
+  const withValidDate = published.filter((p) => {
+    if (!p.publishedAt || typeof p.publishedAt !== 'string') return false;
+    const trimmed = p.publishedAt.trim();
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(trimmed)) return false;
+    const timestamp = Date.parse(trimmed);
+    return !isNaN(timestamp);
+  });
+
+  withValidDate.sort((a, b) => {
+    const timeA = Date.parse(a.publishedAt!.trim());
+    const timeB = Date.parse(b.publishedAt!.trim());
+    return timeB - timeA;
+  });
+
+  return withValidDate.slice(0, limit);
+}
+
+/**
  * Busca um projeto publicado por slug ou id.
  * Retorna undefined se o projeto não existir ou se published for false.
  */

@@ -37,7 +37,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
         <div className="lg:col-span-5 space-y-4">
           <div className="relative border border-[#201E1C]/15 bg-white p-3 shadow-xs">
             <img
-              src="/src/assets/images/hero_fashion_atelier_1793050101693.jpg"
+              src="/assets/images/hero_fashion_atelier_1793050101693.jpg"
               alt="Ambiente de atelier de moda"
               className="w-full aspect-3/4 object-cover"
               referrerPolicy="no-referrer"

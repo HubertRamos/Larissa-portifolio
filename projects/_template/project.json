@@ -1,24 +1,38 @@
 {
   "id": "nome-do-projeto",
   "title": "Título da Obra ou Coleção",
+  "slug": "nome-do-projeto",
   "category": "tailoring",
   "categoryLabel": "Alfaiataria",
   "year": "2026",
-  "issueNumber": "VOL. 01 / PEÇA 05",
-  "description": "Descrição e conceito poético da criação desenvolvida no ateliê.",
+  "publishedAt": "2026-10-31",
+  "issueNumber": "VOL. 01 / PEÇA 01",
+  "description": "Conceito poético, pesquisa formal e narrativa do processo de desenvolvimento da peça.",
+  "summary": "Resumo editorial conciso da criação.",
   "cover": "cover.jpg",
   "images": [
-    "images/look-01.jpg"
+    "images/01.jpg",
+    "images/02.jpg"
   ],
   "materials": [
     "Lã fria estruturada",
     "Seda pura marfim"
   ],
+  "technical": {
+    "silhouette": "Escultural e assimétrica",
+    "fabrication": [
+      "Costura francesa interna",
+      "Modelagem tridimensional manual"
+    ],
+    "closure": "Fecho oculto"
+  },
   "credits": [
-    "Criação e Modelagem: Larissa"
+    "Criação e Modelagem: Larissa",
+    "Fotografia Editorial: Arquivo de Ateliê"
   ],
   "references": [
-    "Pesquisa de proporções e draping"
+    "Pesquisa de proporções e gravidade têxtil",
+    "Arquitetura moderna e corte seco"
   ],
   "featured": false,
   "published": false

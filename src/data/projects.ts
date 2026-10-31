@@ -38,6 +38,28 @@ export function getFeaturedProjects(): Project[] {
 }
 
 /**
+ * Retorna os projetos mais recentes publicados ordenados por publishedAt
+ */
+export function getRecentProjects(limit = 4): Project[] {
+  const published = getPublishedProjects();
+  const withValidDate = published.filter((p) => {
+    if (!p.publishedAt || typeof p.publishedAt !== 'string') return false;
+    const trimmed = p.publishedAt.trim();
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(trimmed)) return false;
+    const timestamp = Date.parse(trimmed);
+    return !isNaN(timestamp);
+  });
+
+  withValidDate.sort((a, b) => {
+    const timeA = Date.parse(a.publishedAt!.trim());
+    const timeB = Date.parse(b.publishedAt!.trim());
+    return timeB - timeA;
+  });
+
+  return withValidDate.slice(0, limit);
+}
+
+/**
  * Busca um projeto publicado pelo slug ou id
  */
 export function getProjectBySlug(slug: string): Project | undefined {

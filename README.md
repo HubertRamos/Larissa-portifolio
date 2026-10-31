@@ -93,12 +93,17 @@ Abra `projects/minha-nova-colecao/project.json` e configure os campos.
 | `id` | string | Sim | Identificador único e estável do projeto. |
 | `title` | string | Sim | Título da obra ou coleção para títulos e cabeçalhos. |
 | `slug` | string | Opcional | Identificador amigável para a rota URL (padrão: nome da pasta). |
-| `category` | string | Sim | Categoria técnica (`tailoring`, `draping`, `textile`, `conceptual`). |
-| `description` | string | Sim | Conceito poético e explicação do processo. |
+| `category` | string | Sim | Categoria técnica (`tailoring`, `draping`, `textile`, `conceptual`, `illustration`). |
+| `categoryLabel` | string | Opcional | Rótulo editorial da categoria (ex: `"Alfaiataria & Silhueta"`). |
+| `year` | string/null | Opcional | Ano de desenvolvimento (ex: `"2026"`). |
+| `publishedAt` | string | Opcional | Data de publicação no formato `YYYY-MM-DD` para ordenação automática nos recentes. |
+| `issueNumber` | string | Opcional | Identificador de edição ou prancha (ex: `"VOL. 01 / PEÇA 01"`). |
+| `description` | string | Sim | Conceito poético, pesquisa formal e narrativa do processo. |
+| `summary` | string | Opcional | Resumo conciso para cartões e visualizações rápidas. |
 | `cover` | string | Sim | Nome do arquivo de capa dentro da pasta (ex: `"cover.jpg"`). |
 | `images` | array | Opcional | Lista de imagens adicionais relativas à pasta (ex: `["images/01.jpg"]`). |
-| `year` | string/null | Opcional | Ano de desenvolvimento. Se ausente, não deixa rótulo vazio. |
-| `materials` | array/string | Opcional | Materiais e técnicas. Se omitido, a seção não é renderizada. |
+| `materials` | array/string | Opcional | Materiais utilizados (ex: `["Lã fria", "Seda pura"]`). |
+| `technical` | object | Opcional | Especificações (`silhouette`, `fabrication`, `closure`). |
 | `credits` | array/string | Opcional | Créditos de fotografia, ateliê e colaboração. |
 | `references` | array/string | Opcional | Fundamentação e referências visuais/artísticas. |
 | `featured` | boolean | Opcional | Se `true`, exibe o projeto em destaque na página inicial. |
