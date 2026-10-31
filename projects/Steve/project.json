@@ -1,0 +1,40 @@
+{
+  "id": "minecraft-steve-v1",
+  "title": "Coleção Overworld: Bloco Base Steve",
+  "slug": "minecraft-steve-v1",
+  "category": "tailoring",
+  "categoryLabel": "Alfaiataria",
+  "year": "2026",
+  "publishedAt": "2026-10-31",
+  "issueNumber": "VOL. 02 / PEÇA 01",
+  "description": "Exploração formal baseada em geometrias cúbicas, texturas pixeladas e a rigidez estrutural do linho bruto combinada com algodão resistente de mineração.",
+  "summary": "Resumo editorial de alfaiataria inspirada na silhueta icônica do sobrevivente do Overworld.",
+  "cover": "cover-steve.jpg",
+  "images": [
+    "cover",
+    "images/look-01.jpg"
+  ],
+  "materials": [
+    "Algodão azul indigo estruturado",
+    "Linho bruto texturizado cor ciano",
+    "Couro curtido rústico"
+  ],
+  "technical": {
+    "silhouette": "Cúbica, modular e de cortes retilíneos",
+    "fabrication": [
+      "Costura geométrica reforçada",
+      "Modelagem em blocos modulares encaixáveis"
+    ],
+    "closure": "Fivelas de ferro forjado"
+  },
+  "credits": [
+    "Criação e Modelagem: Larissa",
+    "Fotografia Editorial: Arquivo de Ateliê"
+  ],
+  "references": [
+    "Geometria de voxels e proporções modulares",
+    "Resistência utilitária de ferramentas de sobrevivência"
+  ],
+  "featured": true,
+  "published": true
+}

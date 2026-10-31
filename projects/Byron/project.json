@@ -1,0 +1,40 @@
+{
+  "id": "byron-elixir-v1",
+  "title": "Coleção Snake Oil: O Boticário Itinerante",
+  "slug": "byron-elixir-v1",
+  "category": "tailoring",
+  "categoryLabel": "Alfaiataria",
+  "year": "2026",
+  "publishedAt": "2026-10-31",
+  "issueNumber": "VOL. 03 / PEÇA 01",
+  "description": "Alfaiataria de corte vitoriano utilitário, inspirada em tons de amarelo âmbar, frascos de veneno destilado e a silhueta clássica de um charlatão elegante do Velho Oeste.",
+  "summary": "Resumo editorial de alfaiataria com foco em sobrecasacas longas, cartolas estruturadas e acabamentos envenenados.",
+  "cover": "cover-byron.jpg",
+  "images": [
+    "cover.jpg",
+    "images/look-02.jpg"
+  ],
+  "materials": [
+    "Veludo cotelê cor mostarda e âmbar",
+    "Couro envelhecido marrom escuro",
+    "Forro em cetim verde-tóxico"
+  ],
+  "technical": {
+    "silhouette": "Sobrecasaca alongada e esbelta",
+    "fabrication": [
+      "Alfaiataria inglesa com bolsos embutidos para frascos",
+      "Modelagem de gola alta rígida"
+    ],
+    "closure": "Botões forrados de pressão oculta"
+  },
+  "credits": [
+    "Criação e Modelagem: Larissa",
+    "Fotografia Editorial: Arquivo de Ateliê"
+  ],
+  "references": [
+    "Estética steampunk e boticários itinerantes",
+    "Corte de casacas clássicas do século XIX"
+  ],
+  "featured": true,
+  "published": true
+}
