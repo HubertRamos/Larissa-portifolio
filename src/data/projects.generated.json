@@ -42,5 +42,49 @@
       "/projects/_template/images/01.jpg",
       "/projects/_template/images/02.jpg"
     ]
+  },
+  {
+    "id": "omnitrix-v1",
+    "title": "Protótipo Omnitrix Mark I (Recalibrado)",
+    "slug": "omnitrix-v1",
+    "category": "galvan-technology",
+    "categoryLabel": "Tecnologia Galvan",
+    "year": "2026",
+    "publishedAt": "2026-10-31",
+    "issueNumber": "VOL. 10 / NÚCLEO 01",
+    "description": "Dispositivo bio-tecnológico galáctico projetado para alteração de DNA e transmutação genético-móvel em escala cósmica.",
+    "summary": "Interface neural de vinculação de DNA alienígena com sistema de estabilização Químico-Galvan.",
+    "cover": "omnitrix-cover.jpg",
+    "images": [
+      "cover.jpg",
+      "images/look-01.jpg"
+    ],
+    "materials": [
+      "Polímero de Plasmita Galvan",
+      "Liga de Polianita Extraterrestre"
+    ],
+    "technical": {
+      "silhouette": "Braçadeira ergonômica adaptativa",
+      "fabrication": [
+        "Codificação de matriz genômica por Azmuth",
+        "Calibração de interface holográfica tridimensional"
+      ],
+      "closure": "Acoplamento neural biométrico instantâneo"
+    },
+    "credits": [
+      "Criação e Arquitetura: Azmuth (Prime Builder)",
+      "Testes de Campo e Operação: Ben Tennyson"
+    ],
+    "references": [
+      "Banco de Dados Genético do Planeta Galvan Prime",
+      "Manuscritos Primordiais dos Encanadores de Bellwood"
+    ],
+    "featured": true,
+    "published": true,
+    "coverImage": "/projects/Ben10/cover.jpg",
+    "gallery": [
+      "/projects/Ben10/cover.jpg",
+      "/projects/Ben10/images/look-01.jpg"
+    ]
   }
 ]

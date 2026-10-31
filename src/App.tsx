@@ -93,8 +93,13 @@ export default function App() {
         siteConfig={siteConfig}
       />
 
-      {/* Main Content View */}
-      <main className="flex-1 w-full" id="main-content" tabIndex={-1}>
+      {/* Main Content View with subtle editorial route fade-in */}
+      <main
+        key={currentRoute + (currentProjectSlug ? `-${currentProjectSlug}` : '')}
+        className="flex-1 w-full animate-route-fade-in"
+        id="main-content"
+        tabIndex={-1}
+      >
         {currentRoute === 'home' && (
           <HomePage
             siteConfig={siteConfig}

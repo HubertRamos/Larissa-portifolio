@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Project, SiteConfig, GalleryItem } from '../types/portfolio';
 import { getNextAndPrevProjects } from '../utils/portfolio';
+import { EditorialImage } from '../components/EditorialImage';
 import { ArrowLeft, ArrowRight, Eye, Layers, Scissors, Palette, Sparkles, BookOpen, Users } from 'lucide-react';
 
 interface ProjectDetailPageProps {
@@ -133,14 +134,17 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
             })
           }
         >
-          <img
+          <EditorialImage
             src={project.coverImage}
             alt={project.title}
-            className="w-full max-h-[75vh] object-cover img-editorial"
-            referrerPolicy="no-referrer"
+            aspectClass="aspect-16/10 sm:aspect-16/9 lg:aspect-21/9"
+            subtitle={project.issueNumber || 'Documentação Editorial'}
+            fetchPriority="high"
+            loading="eager"
+            showHoverZoom
           />
 
-          <div className="absolute inset-0 bg-[#201E1C]/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#F2EEE7]">
+          <div className="absolute inset-0 bg-[#201E1C]/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#F2EEE7] pointer-events-none">
             <div className="flex items-center gap-2 px-4 py-2 bg-[#201E1C]/80 backdrop-blur-xs text-xs uppercase tracking-widest">
               <Eye className="w-4 h-4" />
               <span>Clique para Ampliar em Alta Resolução</span>
@@ -308,13 +312,14 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
                     }
                   >
                     <div className="relative overflow-hidden aspect-4/3 bg-[#201E1C]/5">
-                      <img
+                      <EditorialImage
                         src={img.url}
                         alt={img.caption || project.title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        referrerPolicy="no-referrer"
+                        aspectClass="aspect-4/3"
+                        subtitle={project.title}
+                        showHoverZoom
                       />
-                      <div className="absolute inset-0 bg-[#201E1C]/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#F2EEE7]">
+                      <div className="absolute inset-0 bg-[#201E1C]/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#F2EEE7] pointer-events-none">
                         <Eye className="w-5 h-5" />
                       </div>
                     </div>
@@ -456,13 +461,14 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
                   }
                 >
                   <div className="relative overflow-hidden aspect-4/3 bg-[#201E1C]/5">
-                    <img
+                    <EditorialImage
                       src={step.imageUrl}
                       alt={step.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      referrerPolicy="no-referrer"
+                      aspectClass="aspect-4/3"
+                      subtitle={step.category}
+                      showHoverZoom
                     />
-                    <div className="absolute inset-0 bg-[#201E1C]/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#F2EEE7]">
+                    <div className="absolute inset-0 bg-[#201E1C]/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#F2EEE7] pointer-events-none">
                       <Eye className="w-5 h-5" />
                     </div>
                   </div>

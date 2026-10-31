@@ -11,6 +11,23 @@ function projectsAutoDiscoveryPlugin(): Plugin {
     buildStart() {
       syncProjects();
     },
+    configureServer(server) {
+      syncProjects();
+
+      // Watch projects folder for changes in dev
+      const projectsRoot = path.resolve(import.meta.dirname ?? process.cwd(), 'projects');
+      server.watcher.add(projectsRoot);
+
+      server.watcher.on('all', (event, filePath) => {
+        if (filePath.includes('/projects/') || filePath.includes('\\projects\\')) {
+          try {
+            syncProjects();
+          } catch (err) {
+            console.error('[vite-plugin-projects] Error during hot re-sync:', err);
+          }
+        }
+      });
+    },
     closeBundle() {
       const srcDir = path.resolve(import.meta.dirname ?? process.cwd(), 'projects');
       const distDir = path.resolve(import.meta.dirname ?? process.cwd(), 'dist', 'projects');
